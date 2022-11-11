@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academlo Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+<div class="upload">
+    <div class="load">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="load__gif">
+            <title>Academlo Logo</title>
+            <g>
+              <g>
+                <path
+                  d="M24.45,56.48,0,42.36V14.12L24.46,0,48.92,14.12V42.36ZM1.89,41.26l22.56,13L47,41.26v-26l-22.56-13-22.56,13Z">
+                </path>
+                <path
+                  d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                </path>
+              </g>
+            </g>
+          </svg>
+    </div>
+</div>
+<header class="header" id="header">
+    <nav class="nav_container">
+        <a href="#" class="nav_logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="nav_logo_academlo">
+                <title>Academlo Logo</title><g>
+                <path
+                d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                </path></g>
+            </svg> <strong>Store</strong>
+        </a>
+        <div class="nav_menu">
+            <ul class="nav_list">
+                <li class="nav_item">
+                <a href="#home" class="nav_link">Home</a>
+                </li>
+                <li class="nav_item">
+                <a href="#products" class="nav_link">Products</a>
+                </li>
+            </ul>
+            <div class="nav_close" id="nav_close">
+                <i class='bx bx-x'></i>
+            </div>
+        </div>
+        <div class="nav_btn">
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+            <div class="nav_shop">
+                <i class='bx bx-shopping-bag'></i>
+                <span id="cart-count" class="count">0</span>
+            </div>
+            <div class="nav_toggle" id="toggle">
+                <i class='bx bx-grid-alt' id="iconShop"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="cart" id="cart">
+    <i class='bx bx-x cart_close' id="cart_close"></i>
+    <h2 class="cart__title-center">My cart</h2>
+      <div class="cart__container">
+           <div class="cart_empty">
+              <img src="./src/img/empty-cart.png" alt="empty">
+                 <h2>Your cart is empty</h2>
+                 <p>You can add items to your cart by clicking on the  
+                 <i class="bx bx-plus"></i>
+                 button on the product page.</p>
+           </div>
+     </div>
+   <div class="cart_prices"></div>
+</div>
+<section class="home" id="home">
+    <div class="home_container">
+        <div class="home_img">
+            <img src="./src/img/home.png" alt class="home_photo">
+        </div>
+        <div class="home_data">
+            <h1 class="home_title">New Sweatshirt <br> COLLECTIONS 2022</h1>
+            <P class="home_description">Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a modern desing.</P>
+            <span class="home_price">$14.00</span>
+               <div class="home_btn">
+                 <a href="#" class="button_discov button--gray"><strong>Discover</strong></a>
+                    <button class="button_addTo">ADD TO CART</button>
+               </div>
+        </div>
+    </div>
+</section>
+<main class="main">
+    <section class="products" id="products">
+        <div class="products_container">
+             <ul class="products_filters">
+               <li class="products_store">
+                  <h3 class="products_title">Show All</h3>
+                  <span class="products_stock">Show all products</span>
+               </li>
+               <li class="products_store">
+                  <h3 class="products_title">Hoddies</h3>
+                  <span class="products_stock"> 3 products</span>
+               </li>
+               <li class="products_store"> 
+                  <h3 class="products_title">Shirts</h3>
+                  <span class="products_stock">4 products</span>
+               </li>
+               <li class="products_store">
+                  <h3 class="products_title">Sweatshirts</h3>
+                  <span class="products_stock">4 products</span>
+               </li>
+             </ul>
+        <div class="products_content" id="products_content"></div>
+   </section>
+</main>
+<footer class="footer_section">
+    <div class="footer_container">
+        <div class="footer_content">
+             <h3 class="footer_title">Our information</h3>
+             <ul class="footer_list"><li>Toluca - México</li></ul>
+        </div>
+            <div class="footer_content">
+               <h3 class="footer_title">About Us</h3>
+                <ul class="footer_links">
+                <li><a href="#" class="footer_link">Support Center</a></li>
+                <li><a href="#" class="footer_link">Customer Support</a></li>
+                <li><a href="#" class="footer_link">About Us</a></li>
+                <li><a href="#" class="footer_link">Copy Right</a></li>
+                </ul>
+            </div>
+            <div class="footer_content">
+                <h3 class="footer_title">Product</h3>
+                 <ul class="footer_links">
+                 <li><a href="#" class="footer_link">Hoddies</a></li>
+                 <li><a href="#" class="footer_link">Shirts</a></li>
+                 <li><a href="#" class="footer_link">Sweatshirts</a></li>
+                 </ul>
+            </div>
+            <div class="footer_content">
+               <h3 class="footer_title">Social</h3>
+               <ul class="footer_social">
+               <a href="https://www.facebook.com/" target="_blank" class="footer_social_link"><i class='bx bxl-facebook'></i></a>
+               <a href="https://www.twitter.com/" target="_blank" class="footer_social_link"><i class='bx bxl-twitter'></i></a>
+               <a href="https://www.instagram.com/" target="_blank" class="footer_social_link"><i class='bx bxl-instagram'></i></a>
+              </ul>
+            </div>
+    </div>
+ <span class="footer_copy">@ ACADEMLO. All rigths reversed</span>
+</footer>
+
+<a href="#" class="scrollup" id="scroll-up">
+    <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+</a>
+
+<script src="./src/js/main.js"></script>
+</body>
+</html>
